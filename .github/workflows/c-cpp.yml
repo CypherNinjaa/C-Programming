@@ -2,22 +2,40 @@ name: C/C++ CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - "main"
+      - "release/*"
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - "main"
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
-    - name: configure
+
+    - name: Install Dependencies
+      run: sudo apt-get update && sudo apt-get install -y gcc g++ make
+
+    - name: Configure
       run: ./configure
-    - name: make
+
+    - name: Build
       run: make
-    - name: make check
+
+    - name: Run Tests
       run: make check
-    - name: make distcheck
+
+    - name: Run Distribution Check
       run: make distcheck
+
+    - name: Run Static Analysis
+      run: cppcheck --enable=all --inconclusive .
+
+    - name: Upload Logs and Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-artifacts
+        path: build/
