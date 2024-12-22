@@ -10,9 +10,9 @@ int main()
 }
 int pattern(int n)
 {
-    for (int i = 1; i <= n; i++)
+    for (int i = 0; i < n; i++)
     { // Loop for rows
-        for (int j = 1; j <= i; j++)
+        for (int j = 0; j < 2 * i + 1; j++)
         { // Loop for stars in each row
             printf("*");
         }
