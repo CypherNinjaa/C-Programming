@@ -1,0 +1,1 @@
+printf("THe value of n = %d\n", *x);
