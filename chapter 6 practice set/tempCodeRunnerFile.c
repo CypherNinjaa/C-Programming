@@ -1,1 +1,1 @@
-printf("THe value of n = %d\n", *x);
+ // int x, y;
