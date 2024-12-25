@@ -5,7 +5,7 @@ int main()
     char c = 'H';
     int count = 0;
 
-    char str[] = "Harryx";
+    char str[] = "Harry";
     for (int i = 0; i < strlen(str); i++)
     {
         if (str[i] == c)
