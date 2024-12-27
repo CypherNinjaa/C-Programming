@@ -1,6 +1,7 @@
 {
   "files.autoSave": "onFocusChange",
   "files.associations": {
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "05_PROBLEM.C": "cpp"
   }
 }
