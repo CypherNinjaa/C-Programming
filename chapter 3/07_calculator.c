@@ -27,6 +27,7 @@ int main()
         if (b != 0)
         {
             printf("Quotient = %.2f\n", a / b);
+            int c;
         }
         else
         {

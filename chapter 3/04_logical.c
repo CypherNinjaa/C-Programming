@@ -10,5 +10,5 @@ int main()
             jo false ko true or
         true ko false bana de use not operator kehte hain*/
 
-        return 0;
+    return 0;
 }
