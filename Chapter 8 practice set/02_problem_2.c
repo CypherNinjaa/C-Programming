@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    char str[7];
+    char str[8];
     // by loop
     for (int i = 0; i < 6; i++)
     {
