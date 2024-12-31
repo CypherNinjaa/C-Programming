@@ -16,6 +16,5 @@ int main()
         a = b;
         b = sum;
     }
-
     return 0;
 }
