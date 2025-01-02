@@ -10,7 +10,6 @@ int main()
     ptr[0] = 3;
     ptr[1] = 6;
     printf("%d", ptr[0]);
-
     ptr = (int *)realloc(ptr, 10 * sizeof(int));
     return 0;
 }
