@@ -19,7 +19,7 @@ int main()
 
     printf("table inc to 15\n");
     n = 15;
-    ptr = (int *)realloc(ptr, 10 * sizeof(int));
+    ptr = (int *)realloc(ptr, 15 * sizeof(int));
     for (int i = 1; i <= n; i++)
     {
         ptr[i] = 7 * i;
