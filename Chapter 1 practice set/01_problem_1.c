@@ -5,6 +5,7 @@
 #include <stdio.h>
 int main(){
     int l,b;
+    //fghfghf
 //take inputs
 printf("Enter the Lenghth Of Rectangle : ");
 scanf("%d",&l);
